@@ -106,17 +106,17 @@ function Hero() {
           initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.8 }}
           className="mt-8 font-display text-5xl font-bold leading-[1.05] tracking-tight sm:text-7xl md:text-8xl"
         >
-          Software Engineer
+          Oshadi Jayananda
           <br />
-          <span className="gradient-text">building the web.</span>
+          <span className="gradient-text">Full Stack Developer.</span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.35 }}
           className="mx-auto mt-6 max-w-2xl text-base text-muted-foreground sm:text-lg"
         >
-          Final-year Software Engineering undergraduate and Full Stack Developer crafting
-          performant, accessible products across <span className="text-foreground">React, Node.js, Spring Boot</span> and beyond.
+          Final-year Software Engineering undergraduate at SLIIT crafting
+          performant, accessible products across <span className="text-foreground">React, Node.js, Laravel, Python</span> and beyond.
         </motion.p>
 
         <motion.div
