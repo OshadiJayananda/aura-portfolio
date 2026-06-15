@@ -353,6 +353,7 @@ function Education() {
 }
 
 function Certifications() {
+  if (certifications.length === 0) return null;
   return (
     <section id="certs" className="py-24 sm:py-32">
       <SectionHeader eyebrow="Certifications" title="Continuously learning." />
