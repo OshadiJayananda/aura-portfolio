@@ -4,22 +4,22 @@ import { useRef, useState } from "react";
 import {
   Github, Linkedin, Mail, Download, ArrowRight, ExternalLink,
   Code2, Sparkles, Cpu, Cloud, Database, Brain, Wrench,
-  GraduationCap, Award, Briefcase, MapPin, Send,
+  GraduationCap, Award, Briefcase, MapPin, Send, Phone,
 } from "lucide-react";
 import { ParticlesBg } from "@/components/ParticlesBg";
 import { ProjectModal } from "@/components/ProjectModal";
 import {
-  projects, experience, skills, techBadges, certifications, education, social,
+  projects, experience, skills, techBadges, certifications, education, social, personal,
   type Project,
 } from "@/lib/portfolio-data";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Portfolio — Software Engineer & Full Stack Developer" },
-      { name: "description", content: "Software Engineering undergraduate and Full Stack Developer building modern, AI-driven web experiences." },
-      { property: "og:title", content: "Portfolio — Software Engineer & Full Stack Developer" },
-      { property: "og:description", content: "Software Engineering undergraduate and Full Stack Developer building modern, AI-driven web experiences." },
+      { title: "Oshadi Jayananda — Software Engineer & Full Stack Developer" },
+      { name: "description", content: personal.summary.slice(0, 160) },
+      { property: "og:title", content: "Oshadi Jayananda — Software Engineer & Full Stack Developer" },
+      { property: "og:description", content: personal.summary.slice(0, 160) },
     ],
   }),
   component: Portfolio,
