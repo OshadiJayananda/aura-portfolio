@@ -4,22 +4,22 @@ import { useRef, useState } from "react";
 import {
   Github, Linkedin, Mail, Download, ArrowRight, ExternalLink,
   Code2, Sparkles, Cpu, Cloud, Database, Brain, Wrench,
-  GraduationCap, Award, Briefcase, MapPin, Send,
+  GraduationCap, Award, Briefcase, MapPin, Send, Phone,
 } from "lucide-react";
 import { ParticlesBg } from "@/components/ParticlesBg";
 import { ProjectModal } from "@/components/ProjectModal";
 import {
-  projects, experience, skills, techBadges, certifications, education, social,
+  projects, experience, skills, techBadges, certifications, education, social, personal,
   type Project,
 } from "@/lib/portfolio-data";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Portfolio — Software Engineer & Full Stack Developer" },
-      { name: "description", content: "Software Engineering undergraduate and Full Stack Developer building modern, AI-driven web experiences." },
-      { property: "og:title", content: "Portfolio — Software Engineer & Full Stack Developer" },
-      { property: "og:description", content: "Software Engineering undergraduate and Full Stack Developer building modern, AI-driven web experiences." },
+      { title: "Oshadi Jayananda — Software Engineer & Full Stack Developer" },
+      { name: "description", content: personal.summary.slice(0, 160) },
+      { property: "og:title", content: "Oshadi Jayananda — Software Engineer & Full Stack Developer" },
+      { property: "og:description", content: personal.summary.slice(0, 160) },
     ],
   }),
   component: Portfolio,
@@ -106,17 +106,17 @@ function Hero() {
           initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.8 }}
           className="mt-8 font-display text-5xl font-bold leading-[1.05] tracking-tight sm:text-7xl md:text-8xl"
         >
-          Software Engineer
+          Oshadi Jayananda
           <br />
-          <span className="gradient-text">building the web.</span>
+          <span className="gradient-text">Full Stack Developer.</span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.35 }}
           className="mx-auto mt-6 max-w-2xl text-base text-muted-foreground sm:text-lg"
         >
-          Final-year Software Engineering undergraduate and Full Stack Developer crafting
-          performant, accessible products across <span className="text-foreground">React, Node.js, Spring Boot</span> and beyond.
+          Final-year Software Engineering undergraduate at SLIIT crafting
+          performant, accessible products across <span className="text-foreground">React, Node.js, Laravel, Python</span> and beyond.
         </motion.p>
 
         <motion.div
@@ -180,23 +180,23 @@ function SectionHeader({ eyebrow, title, sub }: { eyebrow: string; title: string
 function About() {
   return (
     <section id="about" className="py-24 sm:py-32">
-      <SectionHeader eyebrow="About" title="Curious engineer, careful builder." />
+      <SectionHeader eyebrow="About" title="Passionate engineer, continuous learner." />
       <motion.div
         variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true, margin: "-100px" }}
         className="glass mx-auto max-w-3xl rounded-2xl p-8 sm:p-10"
       >
         <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
-          I'm a final-year Software Engineering undergraduate who lives at the intersection of
-          <span className="text-foreground"> product thinking</span> and
-          <span className="text-foreground"> rigorous engineering</span>. I love shipping fast,
-          accessible interfaces backed by clean APIs and thoughtful architecture.
+          I am a fourth-year undergraduate in Software Engineering at SLIIT, specializing as a
+          <span className="text-foreground"> full-stack developer</span>. With a passion for technology
+          and continuous learning, I am committed to staying at the forefront of cutting-edge technologies.
         </p>
         <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
-          Recently I've been focused on AI-augmented products — building tools that feel
-          instantaneous, look beautiful, and meaningfully change how people work.
+          My skills span various programming languages, web development frameworks, and database management
+          systems. I aim to contribute to a forward-thinking organization that challenges my abilities
+          and supports my professional growth.
         </p>
         <div className="mt-8 grid grid-cols-3 gap-4 text-center">
-          {[["3+", "Years coding"], ["15+", "Projects shipped"], ["13+", "Technologies"]].map(([n, l]) => (
+          {[["3+", "Years coding"], ["6+", "Projects built"], ["10+", "Technologies"]].map(([n, l]) => (
             <div key={l} className="rounded-xl border border-white/5 bg-white/[0.02] p-4">
               <div className="font-display text-2xl font-bold gradient-text sm:text-3xl">{n}</div>
               <div className="mt-1 text-xs text-muted-foreground">{l}</div>
@@ -353,6 +353,7 @@ function Education() {
 }
 
 function Certifications() {
+  if (certifications.length === 0) return null;
   return (
     <section id="certs" className="py-24 sm:py-32">
       <SectionHeader eyebrow="Certifications" title="Continuously learning." />
@@ -393,8 +394,12 @@ function Contact() {
           <p className="mx-auto mt-3 max-w-md text-muted-foreground">
             Open to internships, full-time roles, and freelance collaborations. The fastest way to reach me is email.
           </p>
-          <div className="mt-3 inline-flex items-center gap-1.5 text-xs text-muted-foreground">
-            <MapPin className="h-3 w-3" /> Colombo, Sri Lanka • Remote-friendly
+          <div className="mt-3 flex flex-wrap items-center justify-center gap-3 text-xs text-muted-foreground">
+            <span className="inline-flex items-center gap-1"><MapPin className="h-3 w-3" /> {personal.location}</span>
+            <span className="hidden sm:inline">•</span>
+            <span className="inline-flex items-center gap-1"><Phone className="h-3 w-3" /> {personal.phone}</span>
+            <span className="hidden sm:inline">•</span>
+            <span>Remote-friendly</span>
           </div>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <a href={social.email} className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[oklch(0.7_0.26_295)] to-[oklch(0.65_0.22_250)] px-6 py-3 text-sm font-medium text-white shadow-lg shadow-[oklch(0.7_0.26_295/0.4)] transition hover:shadow-[oklch(0.7_0.26_295/0.6)]">
@@ -419,7 +424,7 @@ function Footer() {
   return (
     <footer className="mx-auto max-w-6xl px-5 py-10 sm:px-8">
       <div className="flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-8 text-xs text-muted-foreground sm:flex-row">
-        <div>© {new Date().getFullYear()} — Built with React, TanStack & Framer Motion.</div>
+        <div>© {new Date().getFullYear()} Oshadi Jayananda — Built with React, TanStack & Framer Motion.</div>
         <div className="flex items-center gap-1">
           <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
           All systems operational

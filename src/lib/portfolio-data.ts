@@ -15,163 +15,170 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: "sinhalalearn",
-    title: "SinhalaLearn",
+    title: "AI Sinhala Assistant — SinhalaLearn",
     category: "AI / EdTech",
-    short: "AI-powered platform that teaches Sinhala through adaptive, conversational learning.",
+    short: "AI-powered Sinhala learning assistant delivering automated feedback and personalized learning support.",
     description:
-      "A featured AI project that uses LLMs and speech models to deliver personalized Sinhala lessons, real-time pronunciation feedback, and adaptive quizzes that respond to a learner's pace.",
+      "An AI-driven research project focused on improving Sinhala language learning through personalized feedback. Built using Python for the AI engine with a modern web frontend to deliver automated feedback and data-driven learning support.",
     highlights: [
-      "Adaptive lesson engine driven by an LLM tutor",
-      "Speech-to-text pronunciation scoring",
-      "Gamified progress tracking with streaks and XP",
-      "Mobile-first responsive interface",
+      "AI-powered personalized Sinhala language tutoring",
+      "Automated feedback using data-driven analysis",
+      "Research-grade architecture for adaptive learning",
+      "Clean API design with FastAPI for AI inference",
     ],
-    stack: ["Next.js", "TypeScript", "FastAPI", "PostgreSQL", "OpenAI", "Docker"],
+    stack: ["Python", "FastAPI", "PostgreSQL", "Next.js"],
     featured: true,
-    github: "https://github.com/",
+    github: "https://github.com/OshadiJayananda/",
+    demo: "https://www.sinhalalearn.online/",
     accent: "from-[oklch(0.7_0.26_295)] to-[oklch(0.78_0.15_200)]",
   },
   {
     id: "event-booking",
     title: "Secure Cloud-Based Event Booking Platform",
-    category: "Full Stack",
-    short: "Enterprise-grade event booking platform with role-based access and secure payments.",
+    category: "Full Stack / Cloud",
+    short: "Microservice-based event booking platform with event management, payments, and cloud deployment.",
     description:
-      "End-to-end booking platform deployed on Azure with hardened auth, audit trails, encrypted PII storage, and a smooth attendee experience from discovery to checkout.",
+      "A microservice-based event booking platform featuring event management, seat availability tracking, image uploading, booking workflows, secure payments, and notifications. Deployed on Microsoft Azure with Docker containerization and CI/CD via GitHub.",
     highlights: [
-      "OAuth 2.0 + JWT with role-based authorization",
-      "Stripe-powered checkout with webhook reconciliation",
-      "Azure App Service deployment with CI/CD",
-      "Comprehensive audit logging",
+      "Microservice architecture with dedicated Event Service",
+      "Secure payments and booking workflows",
+      "Azure cloud deployment with Docker containerization",
+      "Image uploading via Cloudinary and security scanning with Snyk",
     ],
-    stack: ["Spring Boot", "React", "TypeScript", "PostgreSQL", "Azure", "Docker"],
-    github: "https://github.com/",
+    stack: ["Node.js", "Express", "Next.js", "Microsoft Azure", "Docker", "GitHub", "JWT", "Cloudinary", "Snyk"],
+    github: "https://github.com/OshadiJayananda/",
+    demo: "https://lumaevents.vercel.app/",
     accent: "from-[oklch(0.65_0.22_250)] to-[oklch(0.7_0.26_295)]",
+  },
+  {
+    id: "library-management",
+    title: "Library Management System",
+    category: "Full Stack",
+    short: "Full-stack library system with user authentication, book management, fine payments, and email notifications.",
+    description:
+      "Developed during my internship at ZinCat Technology, this full-stack library management system handles user login, book catalog management, fine payment processing via Stripe, and automated email notifications using Laravel queues.",
+    highlights: [
+      "User authentication and role-based access control",
+      "Book catalog management with search and filtering",
+      "Fine payment handling via Stripe API integration",
+      "Email notifications using Laravel queue system",
+    ],
+    stack: ["Laravel", "React", "Tailwind CSS", "Stripe API", "MySQL"],
+    github: "https://github.com/OshadiJayananda/",
+    accent: "from-[oklch(0.78_0.15_200)] to-[oklch(0.65_0.22_250)]",
   },
   {
     id: "ev-charging",
     title: "EV Charging Station Management System",
-    category: "IoT / Web",
-    short: "Operator dashboard and driver app for managing EV chargers, sessions, and billing.",
+    category: "IoT / Full Stack",
+    short: "Web and mobile application for managing EV charging stations with slot booking and QR-based access.",
     description:
-      "A two-sided platform for EV operators and drivers — real-time station availability, session monitoring, dynamic pricing, and consolidated invoicing.",
+      "A comprehensive web and mobile application for managing EV charging stations. Features include slot booking, real-time tracking, QR-based access control, secure login, and role-based user management across web and Android platforms.",
     highlights: [
-      "Real-time station status via WebSockets",
-      "Session metering with dynamic pricing",
-      "Operator analytics dashboard",
-      "Driver app with reservations and turn-by-turn navigation",
+      "Slot booking and reservation system",
+      "Real-time charging station tracking",
+      "QR-based access control for stations",
+      "Cross-platform: web (React) and Android (Java)",
     ],
-    stack: ["Next.js", "Node.js", "Express.js", "MongoDB", "Firebase"],
-    github: "https://github.com/",
-    accent: "from-[oklch(0.78_0.15_200)] to-[oklch(0.65_0.22_250)]",
-  },
-  {
-    id: "garbage",
-    title: "Smart Garbage Management System",
-    category: "IoT / Analytics",
-    short: "IoT-driven waste collection platform that optimizes routes and bin pickups.",
-    description:
-      "Combines IoT sensors with a route-optimization backend to reduce collection cost and overflow incidents in urban areas.",
-    highlights: [
-      "Sensor ingestion pipeline with anomaly detection",
-      "Route optimization using OR-Tools",
-      "Citizen reporting via mobile app",
-      "Admin heatmaps and KPI dashboards",
-    ],
-    stack: ["Laravel", "React", "FastAPI", "PostgreSQL", "Docker"],
-    github: "https://github.com/",
+    stack: ["React", "ASP.NET", "Java (Android)", "MongoDB", "SQLite", "JWT", "IIS"],
+    github: "https://github.com/OshadiJayananda/",
     accent: "from-[oklch(0.7_0.18_180)] to-[oklch(0.6_0.2_270)]",
   },
   {
-    id: "flavorfleet",
-    title: "FlavorFleet — Food Delivery Platform",
-    category: "Full Stack",
-    short: "Multi-restaurant food delivery app with live order tracking and driver dispatch.",
+    id: "garbage",
+    title: "Smart Garbage Management System (SGMS)",
+    category: "IoT / Security",
+    short: "Secure backend system for waste collection management built on OWASP security practices.",
     description:
-      "Three-sided marketplace connecting customers, restaurants, and drivers — featuring live order tracking, smart dispatch, and a unified merchant console.",
+      "A secure backend system for waste collection management. Implements authentication, role-based access control, secure APIs, input validation, and comprehensive security testing based on OWASP security practices.",
     highlights: [
-      "Realtime order tracking with Firebase",
-      "Smart dispatch algorithm minimizing ETA",
-      "Merchant console with menu and analytics",
-      "Containerized microservices",
+      "OWASP-based security implementation",
+      "Role-based access control and authentication",
+      "Secure API design with input validation",
+      "Security testing with Postman and specialized tools",
     ],
-    stack: ["React", "Node.js", "Express.js", "MongoDB", "Firebase", "Docker"],
-    github: "https://github.com/",
+    stack: ["Node.js", "Express.js", "MongoDB", "JWT", "Postman", "Security Testing Tools"],
+    github: "https://github.com/OshadiJayananda/",
     accent: "from-[oklch(0.7_0.22_30)] to-[oklch(0.65_0.24_295)]",
+  },
+  {
+    id: "flavorfleet",
+    title: "FlavorFleet — Online Food Delivery Platform",
+    category: "Full Stack / Microservices",
+    short: "Full-stack food delivery system using microservices with order management and secure payments.",
+    description:
+      "A full-stack food delivery platform built on a microservices architecture. Features order management, delivery tracking, secure payments with Stripe, API Gateway support, and Docker-based deployment for scalability.",
+    highlights: [
+      "Microservices architecture with API Gateway",
+      "Real-time order management and delivery tracking",
+      "Secure payment processing via Stripe",
+      "Docker-based containerized deployment",
+    ],
+    stack: ["React", "Node.js", "Docker", "Stripe API", "JWT"],
+    github: "https://github.com/OshadiJayananda/",
+    accent: "from-[oklch(0.7_0.18_150)] to-[oklch(0.65_0.22_260)]",
   },
 ];
 
 export const experience = [
   {
-    role: "Software Engineering Intern",
-    company: "Tech Innovators (Pvt) Ltd",
-    period: "2024 — Present",
+    role: "Intern Full Stack Developer",
+    company: "ZinCat Technology — Remote",
+    period: "Dec 2024 — Sep 2025",
     points: [
-      "Built and shipped production features across React, Node.js, and PostgreSQL stack",
-      "Reduced API latency by 38% through query optimization and caching",
-      "Owned end-to-end delivery of a customer-facing analytics dashboard",
-    ],
-  },
-  {
-    role: "Freelance Full Stack Developer",
-    company: "Self-Employed",
-    period: "2023 — 2024",
-    points: [
-      "Delivered 6+ web projects spanning e-commerce, booking, and SaaS dashboards",
-      "Architected scalable backends using Spring Boot, Express, and FastAPI",
-      "Maintained 100% client satisfaction across all engagements",
-    ],
-  },
-  {
-    role: "Open Source Contributor",
-    company: "Various Projects",
-    period: "2022 — Present",
-    points: [
-      "Contributed to TypeScript-based component libraries and developer tools",
-      "Authored documentation and example implementations",
+      "Developed a Library Management System using Laravel and React with Tailwind CSS",
+      "Implemented user authentication, book management, and Stripe API integrations for fine payments",
+      "Built email notification system using Laravel queues for efficient delivery",
+      "Collaborated via regular Teams meetings with two supervisors in a remote work environment",
     ],
   },
 ];
 
 export const skills = [
-  { name: "Frontend", items: ["React", "Next.js", "TypeScript", "TailwindCSS", "Framer Motion"] },
-  { name: "Backend", items: ["Node.js", "Express.js", "Spring Boot", "FastAPI", "Laravel"] },
-  { name: "Cloud & DevOps", items: ["Azure", "Docker", "GitHub Actions", "Vercel", "CI/CD"] },
-  { name: "Databases", items: ["PostgreSQL", "MongoDB", "Firebase", "Redis"] },
-  { name: "AI & Data", items: ["LLM Integration", "RAG", "Vector DBs", "Python"] },
-  { name: "Tools & Practice", items: ["Git", "Agile/Scrum", "Testing", "System Design"] },
+  { name: "Languages", items: ["Python", "R", "C", "C++", "JavaScript", "PHP", "Java", "C#", "TypeScript", "Kotlin"] },
+  { name: "Web Technologies", items: ["React", "Laravel", "Next.js", ".NET", "Spring Boot", "FastAPI", "Postman", "Swagger", "Tailwind CSS", "ASP.NET"] },
+  { name: "Mobile & Cross-Platform", items: ["Flutter", "Kotlin", "Firebase", "Java (Android)"] },
+  { name: "Databases", items: ["MySQL", "PostgreSQL", "MongoDB", "Firebase Firestore", "SQLite"] },
+  { name: "Cloud & DevOps", items: ["Microsoft Azure", "Docker", "Git", "GitHub", "IIS", "CI/CD"] },
+  { name: "Tools & Security", items: ["JWT", "Stripe API", "Cloudinary", "Snyk", "OWASP", "Security Testing"] },
 ];
 
 export const techBadges = [
-  "React", "Next.js", "TypeScript", "Node.js", "Express.js", "Spring Boot",
-  "FastAPI", "Laravel", "Azure", "Docker", "PostgreSQL", "MongoDB", "Firebase",
+  "React", "Next.js", "TypeScript", "Node.js", "Express.js", "Laravel",
+  "Spring Boot", "FastAPI", "Python", "Azure", "Docker", "PostgreSQL",
+  "MongoDB", "Firebase", "Stripe", "Tailwind CSS", "Git", "JWT",
 ];
 
-export const certifications = [
-  { name: "Microsoft Certified: Azure Fundamentals", issuer: "Microsoft", year: "2024" },
-  { name: "Meta Front-End Developer Professional Certificate", issuer: "Meta / Coursera", year: "2024" },
-  { name: "AWS Cloud Practitioner Essentials", issuer: "Amazon Web Services", year: "2023" },
-  { name: "MongoDB for JavaScript Developers", issuer: "MongoDB University", year: "2023" },
-];
+export const certifications: { name: string; issuer: string; year: string }[] = [];
 
 export const education = [
   {
     school: "Sri Lanka Institute of Information Technology (SLIIT)",
     degree: "BSc (Hons) in Information Technology — Software Engineering",
-    period: "2022 — 2026",
-    detail: "Current GPA: 3.7 / 4.0 • Dean's List",
+    period: "Sep 2022 — Sep 2026",
+    detail: "Developed skills in web, mobile, and enterprise application development using HTML, CSS, PHP, Java, ASP.NET, and Vue.js. Conducted AI-driven research project, sinhalalearn.online.",
   },
   {
-    school: "G.C.E. Advanced Level — Physical Science Stream",
-    degree: "Secondary Education",
-    period: "2019 — 2021",
-    detail: "Distinctions in Combined Mathematics, Physics, and ICT",
+    school: "Dharmapala Vidyalaya Pannipitiya",
+    degree: "Secondary Education — Physical Science Stream",
+    period: "Jan 2008 — Feb 2022",
+    detail: "GCE O/L: 7A's, 2B's (Dec 2018) • GCE A/L: 3C's in Maths Stream — Combined Mathematics, Chemistry, Physics (Feb 2022)",
   },
 ];
 
 export const social = {
-  github: "https://github.com/",
-  linkedin: "https://linkedin.com/",
-  email: "mailto:hello@example.com",
+  github: "https://github.com/OshadiJayananda",
+  linkedin: "https://www.linkedin.com/in/oshadi-jayananda/",
+  email: "mailto:oshadi.jayananda@gmail.com",
   cv: "/cv.pdf",
+};
+
+export const personal = {
+  name: "Oshadi Jayananda",
+  title: "Software Engineering Undergraduate & Full Stack Developer",
+  phone: "+94 76 203 2676",
+  location: "Pannipitiya, Sri Lanka",
+  address: "100/9C, Dharmapala Mawatha, Pannipitiya",
+  summary:
+    "I am a fourth-year undergraduate in Software Engineering at the Sri Lanka Institute of Information Technology (SLIIT), specializing as a full-stack developer. With a passion for technology and continuous learning, I am committed to staying at the forefront of cutting-edge technologies. My skills include working with various programming languages, web development frameworks, and database management systems. I aim to contribute to a forward-thinking organization that challenges my abilities and supports my professional growth in a competitive environment.",
 };
