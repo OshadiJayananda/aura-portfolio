@@ -291,33 +291,48 @@ function Projects({ onOpen }: { onOpen: (p: Project) => void }) {
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.5, delay: (i % 2) * 0.1 }}
             whileHover={{ y: -6 }}
-            className={`group glass relative overflow-hidden rounded-2xl p-6 text-left ${p.featured ? "md:col-span-2" : ""}`}
+            className={`group glass relative overflow-hidden rounded-2xl text-left ${p.featured ? "md:col-span-2" : ""}`}
           >
-            <div className={`absolute -right-20 -top-20 h-48 w-48 rounded-full bg-gradient-to-br ${p.accent} opacity-20 blur-3xl transition group-hover:opacity-40`} />
-            <div className="relative flex items-start justify-between gap-4">
-              <div className="flex items-center gap-2">
-                <span className="rounded-full bg-white/5 px-2.5 py-0.5 text-[10px] font-medium uppercase tracking-wider text-muted-foreground">{p.category}</span>
-                {p.featured && (
-                  <span className="inline-flex items-center gap-1 rounded-full bg-gradient-to-r from-[oklch(0.7_0.26_295)] to-[oklch(0.65_0.22_250)] px-2.5 py-0.5 text-[10px] font-medium uppercase tracking-wider text-white">
-                    <Sparkles className="h-2.5 w-2.5" /> Featured
-                  </span>
+            <div className={`relative overflow-hidden ${p.featured ? "aspect-[2.4/1]" : "aspect-[2/1]"}`}>
+              <img
+                src={p.banner}
+                alt={`${p.title} banner`}
+                loading="lazy"
+                width={1280}
+                height={640}
+                className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
+              <div className={`absolute inset-0 bg-gradient-to-br ${p.accent} opacity-0 mix-blend-overlay transition duration-500 group-hover:opacity-60`} />
+            </div>
+            <div className="relative p-6">
+              <div className={`pointer-events-none absolute -right-20 -top-20 h-48 w-48 rounded-full bg-gradient-to-br ${p.accent} opacity-20 blur-3xl transition group-hover:opacity-40`} />
+              <div className="relative flex items-start justify-between gap-4">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="rounded-full bg-white/5 px-2.5 py-0.5 text-[10px] font-medium uppercase tracking-wider text-muted-foreground">{p.category}</span>
+                  {p.featured && (
+                    <span className="inline-flex items-center gap-1 rounded-full bg-gradient-to-r from-[oklch(0.7_0.26_295)] to-[oklch(0.65_0.22_250)] px-2.5 py-0.5 text-[10px] font-medium uppercase tracking-wider text-white">
+                      <Sparkles className="h-2.5 w-2.5" /> Featured
+                    </span>
+                  )}
+                </div>
+                <ExternalLink className="h-4 w-4 shrink-0 text-muted-foreground transition group-hover:text-foreground" />
+              </div>
+              <h3 className={`relative mt-3 font-display font-bold ${p.featured ? "text-2xl sm:text-4xl" : "text-xl"}`}>
+                {p.title}
+              </h3>
+              <p className="relative mt-2 text-sm text-muted-foreground">{p.short}</p>
+              <div className="relative mt-4 flex flex-wrap gap-1.5">
+                {p.stack.slice(0, 5).map((t) => (
+                  <span key={t} className="rounded-md border border-white/10 bg-white/5 px-2 py-0.5 text-[11px] text-foreground/80">{t}</span>
+                ))}
+                {p.stack.length > 5 && (
+                  <span className="rounded-md border border-white/10 bg-white/5 px-2 py-0.5 text-[11px] text-muted-foreground">+{p.stack.length - 5}</span>
                 )}
               </div>
-              <ExternalLink className="h-4 w-4 text-muted-foreground transition group-hover:text-foreground" />
-            </div>
-            <h3 className={`relative mt-4 font-display font-bold ${p.featured ? "text-3xl sm:text-4xl" : "text-xl"}`}>
-              {p.title}
-            </h3>
-            <p className="relative mt-2 text-sm text-muted-foreground">{p.short}</p>
-            <div className="relative mt-4 flex flex-wrap gap-1.5">
-              {p.stack.slice(0, 5).map((t) => (
-                <span key={t} className="rounded-md border border-white/10 bg-white/5 px-2 py-0.5 text-[11px] text-foreground/80">{t}</span>
-              ))}
-              {p.stack.length > 5 && (
-                <span className="rounded-md border border-white/10 bg-white/5 px-2 py-0.5 text-[11px] text-muted-foreground">+{p.stack.length - 5}</span>
-              )}
             </div>
           </motion.button>
+
         ))}
       </div>
     </section>
