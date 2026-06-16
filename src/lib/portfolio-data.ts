@@ -1,3 +1,10 @@
+import bannerSinhalaLearn from "@/assets/banner-sinhalalearn.jpg";
+import bannerEvent from "@/assets/banner-event.jpg";
+import bannerLibrary from "@/assets/banner-library.jpg";
+import bannerEv from "@/assets/banner-ev.jpg";
+import bannerGarbage from "@/assets/banner-garbage.jpg";
+import bannerFlavorfleet from "@/assets/banner-flavorfleet.jpg";
+
 export type Project = {
   id: string;
   title: string;
@@ -10,6 +17,7 @@ export type Project = {
   github?: string;
   demo?: string;
   accent: string;
+  banner: string;
 };
 
 export const projects: Project[] = [
