@@ -68,9 +68,11 @@ export function ProjectModal({ project, onClose }: { project: Project | null; on
                 </a>
               )}
             </div>
+            </div>
           </motion.div>
         </motion.div>
       )}
     </AnimatePresence>
   );
 }
+
