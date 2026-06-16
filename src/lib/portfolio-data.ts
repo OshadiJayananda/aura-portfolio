@@ -185,7 +185,7 @@ export const social = {
   github: "https://github.com/OshadiJayananda",
   linkedin: "https://www.linkedin.com/in/oshadi-jayananda/",
   email: "mailto:oshadi.jayananda@gmail.com",
-  cv: "/cv.pdf",
+  cv: cvAsset.url,
 };
 
 export const personal = {
