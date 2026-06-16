@@ -39,6 +39,7 @@ export const projects: Project[] = [
     github: "https://github.com/OshadiJayananda/",
     demo: "https://www.sinhalalearn.online/",
     accent: "from-[oklch(0.7_0.26_295)] to-[oklch(0.78_0.15_200)]",
+    banner: bannerSinhalaLearn,
   },
   {
     id: "event-booking",
@@ -57,6 +58,7 @@ export const projects: Project[] = [
     github: "https://github.com/OshadiJayananda/",
     demo: "https://lumaevents.vercel.app/",
     accent: "from-[oklch(0.65_0.22_250)] to-[oklch(0.7_0.26_295)]",
+    banner: bannerEvent,
   },
   {
     id: "library-management",
@@ -74,6 +76,7 @@ export const projects: Project[] = [
     stack: ["Laravel", "React", "Tailwind CSS", "Stripe API", "MySQL"],
     github: "https://github.com/OshadiJayananda/",
     accent: "from-[oklch(0.78_0.15_200)] to-[oklch(0.65_0.22_250)]",
+    banner: bannerLibrary,
   },
   {
     id: "ev-charging",
@@ -91,6 +94,7 @@ export const projects: Project[] = [
     stack: ["React", "ASP.NET", "Java (Android)", "MongoDB", "SQLite", "JWT", "IIS"],
     github: "https://github.com/OshadiJayananda/",
     accent: "from-[oklch(0.7_0.18_180)] to-[oklch(0.6_0.2_270)]",
+    banner: bannerEv,
   },
   {
     id: "garbage",
@@ -108,6 +112,7 @@ export const projects: Project[] = [
     stack: ["Node.js", "Express.js", "MongoDB", "JWT", "Postman", "Security Testing Tools"],
     github: "https://github.com/OshadiJayananda/",
     accent: "from-[oklch(0.7_0.22_30)] to-[oklch(0.65_0.24_295)]",
+    banner: bannerGarbage,
   },
   {
     id: "flavorfleet",
@@ -125,6 +130,7 @@ export const projects: Project[] = [
     stack: ["React", "Node.js", "Docker", "Stripe API", "JWT"],
     github: "https://github.com/OshadiJayananda/",
     accent: "from-[oklch(0.7_0.18_150)] to-[oklch(0.65_0.22_260)]",
+    banner: bannerFlavorfleet,
   },
 ];
 
