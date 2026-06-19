@@ -4,7 +4,7 @@ import bannerLibrary from "@/assets/banner-library.jpg";
 import bannerEv from "@/assets/banner-ev.jpg";
 import bannerGarbage from "@/assets/banner-garbage.jpg";
 import bannerFlavorfleet from "@/assets/banner-flavorfleet.jpg";
-import cvAsset from "@/assets/Oshadi_Jayananda_CV.pdf.asset.json";
+import cvPdf from "@/assets/Oshadi_Jayananda.pdf";
 
 export type Project = {
   id: string;
@@ -185,7 +185,7 @@ export const social = {
   github: "https://github.com/OshadiJayananda",
   linkedin: "https://www.linkedin.com/in/oshadi-jayananda/",
   email: "mailto:oshadi.jayananda@gmail.com",
-  cv: cvAsset.url,
+  cv: cvPdf,
 };
 
 export const personal = {
