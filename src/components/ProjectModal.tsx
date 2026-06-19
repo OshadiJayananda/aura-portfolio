@@ -4,6 +4,9 @@ import type { Project } from "@/lib/portfolio-data";
 import { useEffect } from "react";
 
 export function ProjectModal({ project, onClose }: { project: Project | null; onClose: () => void }) {
+  const githubLinks =
+    project?.githubLinks ?? (project?.github ? [{ label: "Source", url: project.github }] : []);
+
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
     window.addEventListener("keydown", onKey);
@@ -24,14 +27,20 @@ export function ProjectModal({ project, onClose }: { project: Project | null; on
             exit={{ scale: 0.95, y: 20, opacity: 0 }}
             transition={{ type: "spring", damping: 25 }}
             onClick={(e) => e.stopPropagation()}
-            className="glass relative max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-2xl p-8"
+            className="glass relative max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-2xl"
           >
-            <button onClick={onClose} className="absolute right-4 top-4 rounded-full p-2 text-muted-foreground transition hover:bg-white/10 hover:text-foreground">
+            <button onClick={onClose} className="absolute right-4 top-4 z-10 rounded-full bg-black/40 p-2 text-white backdrop-blur-md transition hover:bg-black/60">
               <X className="h-5 w-5" />
             </button>
+            <div className="relative aspect-[2/1] overflow-hidden">
+              <img src={project.banner} alt={`${project.title} banner`} className="h-full w-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
+            </div>
+            <div className="p-8 pt-2">
             <div className="mb-3 inline-flex rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary">{project.category}</div>
             <h3 className="font-display text-3xl font-bold gradient-text">{project.title}</h3>
             <p className="mt-3 text-muted-foreground">{project.description}</p>
+
 
             <h4 className="mt-6 text-sm font-semibold uppercase tracking-wider text-foreground/80">Highlights</h4>
             <ul className="mt-2 space-y-2">
@@ -51,16 +60,17 @@ export function ProjectModal({ project, onClose }: { project: Project | null; on
             </div>
 
             <div className="mt-6 flex flex-wrap gap-3">
-              {project.github && (
-                <a href={project.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium transition hover:bg-white/10">
-                  <Github className="h-4 w-4" /> Source
+              {githubLinks.map((link) => (
+                <a key={link.url} href={link.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium transition hover:bg-white/10">
+                  <Github className="h-4 w-4" /> {link.label}
                 </a>
-              )}
+              ))}
               {project.demo && (
                 <a href={project.demo} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-[oklch(0.7_0.26_295)] to-[oklch(0.65_0.22_250)] px-4 py-2 text-sm font-medium text-white transition hover:opacity-90">
                   <ExternalLink className="h-4 w-4" /> Live Demo
                 </a>
               )}
+            </div>
             </div>
           </motion.div>
         </motion.div>
@@ -68,3 +78,4 @@ export function ProjectModal({ project, onClose }: { project: Project | null; on
     </AnimatePresence>
   );
 }
+
