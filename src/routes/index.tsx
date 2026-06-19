@@ -115,11 +115,7 @@ function Nav() {
         </nav>
         <a
           href={social.cv}
-<<<<<<< HEAD
-          download
-=======
           download={cvDownloadName}
->>>>>>> feature/Projects
           className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-[oklch(0.7_0.26_295)] to-[oklch(0.65_0.22_250)] px-4 py-1.5 text-xs font-medium text-white transition hover:opacity-90"
         >
           <Download className="h-3.5 w-3.5" /> CV
@@ -152,11 +148,7 @@ function Hero() {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
           </span>
-<<<<<<< HEAD
-          Available for internships & Associate Software Engineer roles
-=======
           Available for Internships & Associate Software Engineer Opportunities
->>>>>>> feature/Projects
         </motion.div>
 
         <motion.h1
@@ -405,43 +397,6 @@ function Projects({ onOpen }: { onOpen: (p: Project) => void }) {
             className={`group glass relative overflow-hidden rounded-2xl text-left ${p.featured ? "md:col-span-2" : ""}`}
           >
             <div
-<<<<<<< HEAD
-              className={`absolute -right-20 -top-20 h-48 w-48 rounded-full bg-gradient-to-br ${p.accent} opacity-20 blur-3xl transition group-hover:opacity-40`}
-            />
-            <div className="relative flex items-start justify-between gap-4">
-              <div className="flex items-center gap-2">
-                <span className="rounded-full bg-white/5 px-2.5 py-0.5 text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
-                  {p.category}
-                </span>
-                {p.featured && (
-                  <span className="inline-flex items-center gap-1 rounded-full bg-gradient-to-r from-[oklch(0.7_0.26_295)] to-[oklch(0.65_0.22_250)] px-2.5 py-0.5 text-[10px] font-medium uppercase tracking-wider text-white">
-                    <Sparkles className="h-2.5 w-2.5" /> Featured
-                  </span>
-                )}
-              </div>
-              <ExternalLink className="h-4 w-4 text-muted-foreground transition group-hover:text-foreground" />
-            </div>
-            <h3
-              className={`relative mt-4 font-display font-bold ${p.featured ? "text-3xl sm:text-4xl" : "text-xl"}`}
-            >
-              {p.title}
-            </h3>
-            <p className="relative mt-2 text-sm text-muted-foreground">{p.short}</p>
-            <div className="relative mt-4 flex flex-wrap gap-1.5">
-              {p.stack.slice(0, 5).map((t) => (
-                <span
-                  key={t}
-                  className="rounded-md border border-white/10 bg-white/5 px-2 py-0.5 text-[11px] text-foreground/80"
-                >
-                  {t}
-                </span>
-              ))}
-              {p.stack.length > 5 && (
-                <span className="rounded-md border border-white/10 bg-white/5 px-2 py-0.5 text-[11px] text-muted-foreground">
-                  +{p.stack.length - 5}
-                </span>
-              )}
-=======
               className={`relative overflow-hidden ${p.featured ? "aspect-[2.4/1]" : "aspect-[2/1]"}`}
             >
               <img
@@ -495,7 +450,6 @@ function Projects({ onOpen }: { onOpen: (p: Project) => void }) {
                   </span>
                 )}
               </div>
->>>>>>> feature/Projects
             </div>
           </motion.button>
         ))}
@@ -608,18 +562,11 @@ function Contact() {
             </a>
             <a
               href={social.cv}
-<<<<<<< HEAD
-              download
-              className="glass inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition hover:bg-white/10"
-            >
-              <Download className="h-4 w-4" /> Download CV
-=======
               download={cvDownloadName}
               className="glass inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition hover:bg-white/10"
             >
               <Download className="h-4 w-4" />
               Download CV
->>>>>>> feature/Projects
             </a>
           </div>
           <div className="mt-6 flex justify-center gap-2">
