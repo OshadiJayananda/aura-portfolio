@@ -1,3 +1,11 @@
+import bannerSinhalaLearn from "@/assets/banner-sinhalalearn.jpg";
+import bannerEvent from "@/assets/banner-event.jpg";
+import bannerLibrary from "@/assets/banner-library.jpg";
+import bannerEv from "@/assets/banner-ev.jpg";
+import bannerGarbage from "@/assets/banner-garbage.jpg";
+import bannerFlavorfleet from "@/assets/banner-flavorfleet.jpg";
+import cvPdf from "@/assets/Oshadi_Jayananda.pdf";
+
 export type Project = {
   id: string;
   title: string;
@@ -8,8 +16,10 @@ export type Project = {
   stack: string[];
   featured?: boolean;
   github?: string;
+  githubLinks?: { label: string; url: string }[];
   demo?: string;
   accent: string;
+  banner: string;
 };
 
 export const projects: Project[] = [
@@ -28,9 +38,13 @@ export const projects: Project[] = [
     ],
     stack: ["Python", "FastAPI", "PostgreSQL", "Next.js"],
     featured: true,
-    github: "https://github.com/OshadiJayananda/",
+    githubLinks: [
+      { label: "Backend", url: "https://github.com/hasindu-k/sinhala-ed-assistant" },
+      { label: "Frontend", url: "https://github.com/Miyuri15/sinlearn-web" },
+    ],
     demo: "https://www.sinhalalearn.online/",
     accent: "from-[oklch(0.7_0.26_295)] to-[oklch(0.78_0.15_200)]",
+    banner: bannerSinhalaLearn,
   },
   {
     id: "event-booking",
@@ -46,9 +60,15 @@ export const projects: Project[] = [
       "Image uploading via Cloudinary and security scanning with Snyk",
     ],
     stack: ["Node.js", "Express", "Next.js", "Microsoft Azure", "Docker", "GitHub", "JWT", "Cloudinary", "Snyk"],
-    github: "https://github.com/OshadiJayananda/",
+    githubLinks: [
+      {
+        label: "Event Service",
+        url: "https://github.com/OshadiJayananda/event-ticket-event-service",
+      },
+    ],
     demo: "https://lumaevents.vercel.app/",
     accent: "from-[oklch(0.65_0.22_250)] to-[oklch(0.7_0.26_295)]",
+    banner: bannerEvent,
   },
   {
     id: "library-management",
@@ -64,8 +84,12 @@ export const projects: Project[] = [
       "Email notifications using Laravel queue system",
     ],
     stack: ["Laravel", "React", "Tailwind CSS", "Stripe API", "MySQL"],
-    github: "https://github.com/OshadiJayananda/",
+    githubLinks: [
+      { label: "Frontend", url: "https://github.com/OshadiJayananda/lms-frontend" },
+      { label: "Backend", url: "https://github.com/OshadiJayananda/lms-backend" },
+    ],
     accent: "from-[oklch(0.78_0.15_200)] to-[oklch(0.65_0.22_250)]",
+    banner: bannerLibrary,
   },
   {
     id: "ev-charging",
@@ -81,8 +105,9 @@ export const projects: Project[] = [
       "Cross-platform: web (React) and Android (Java)",
     ],
     stack: ["React", "ASP.NET", "Java (Android)", "MongoDB", "SQLite", "JWT", "IIS"],
-    github: "https://github.com/OshadiJayananda/",
+    github: "https://github.com/OshadiJayananda/EV-Charging-System",
     accent: "from-[oklch(0.7_0.18_180)] to-[oklch(0.6_0.2_270)]",
+    banner: bannerEv,
   },
   {
     id: "garbage",
@@ -98,8 +123,12 @@ export const projects: Project[] = [
       "Security testing with Postman and specialized tools",
     ],
     stack: ["Node.js", "Express.js", "MongoDB", "JWT", "Postman", "Security Testing Tools"],
-    github: "https://github.com/OshadiJayananda/",
+    githubLinks: [
+      { label: "Repo 1", url: "https://github.com/hasindu-k/Garbage_App" },
+      { label: "Repo 2", url: "https://github.com/OshadiJayananda/Garbage_App" },
+    ],
     accent: "from-[oklch(0.7_0.22_30)] to-[oklch(0.65_0.24_295)]",
+    banner: bannerGarbage,
   },
   {
     id: "flavorfleet",
@@ -115,8 +144,9 @@ export const projects: Project[] = [
       "Docker-based containerized deployment",
     ],
     stack: ["React", "Node.js", "Docker", "Stripe API", "JWT"],
-    github: "https://github.com/OshadiJayananda/",
+    github: "https://github.com/Miyuri15/FlavorFleet",
     accent: "from-[oklch(0.7_0.18_150)] to-[oklch(0.65_0.22_260)]",
+    banner: bannerFlavorfleet,
   },
 ];
 
@@ -170,7 +200,7 @@ export const social = {
   github: "https://github.com/OshadiJayananda",
   linkedin: "https://www.linkedin.com/in/oshadi-jayananda/",
   email: "mailto:oshadi.jayananda@gmail.com",
-  cv: "/cv.pdf",
+  cv: cvPdf,
 };
 
 export const personal = {
