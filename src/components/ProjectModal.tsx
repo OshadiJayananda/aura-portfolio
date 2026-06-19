@@ -4,6 +4,9 @@ import type { Project } from "@/lib/portfolio-data";
 import { useEffect } from "react";
 
 export function ProjectModal({ project, onClose }: { project: Project | null; onClose: () => void }) {
+  const githubLinks =
+    project?.githubLinks ?? (project?.github ? [{ label: "Source", url: project.github }] : []);
+
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
     window.addEventListener("keydown", onKey);
@@ -57,11 +60,11 @@ export function ProjectModal({ project, onClose }: { project: Project | null; on
             </div>
 
             <div className="mt-6 flex flex-wrap gap-3">
-              {project.github && (
-                <a href={project.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium transition hover:bg-white/10">
-                  <Github className="h-4 w-4" /> Source
+              {githubLinks.map((link) => (
+                <a key={link.url} href={link.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium transition hover:bg-white/10">
+                  <Github className="h-4 w-4" /> {link.label}
                 </a>
-              )}
+              ))}
               {project.demo && (
                 <a href={project.demo} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-[oklch(0.7_0.26_295)] to-[oklch(0.65_0.22_250)] px-4 py-2 text-sm font-medium text-white transition hover:opacity-90">
                   <ExternalLink className="h-4 w-4" /> Live Demo

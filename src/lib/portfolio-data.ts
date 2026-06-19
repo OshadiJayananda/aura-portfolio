@@ -16,6 +16,7 @@ export type Project = {
   stack: string[];
   featured?: boolean;
   github?: string;
+  githubLinks?: { label: string; url: string }[];
   demo?: string;
   accent: string;
   banner: string;
@@ -37,7 +38,10 @@ export const projects: Project[] = [
     ],
     stack: ["Python", "FastAPI", "PostgreSQL", "Next.js"],
     featured: true,
-    github: "https://github.com/OshadiJayananda/",
+    githubLinks: [
+      { label: "Backend", url: "https://github.com/hasindu-k/sinhala-ed-assistant" },
+      { label: "Frontend", url: "https://github.com/Miyuri15/sinlearn-web" },
+    ],
     demo: "https://www.sinhalalearn.online/",
     accent: "from-[oklch(0.7_0.26_295)] to-[oklch(0.78_0.15_200)]",
     banner: bannerSinhalaLearn,
@@ -56,7 +60,12 @@ export const projects: Project[] = [
       "Image uploading via Cloudinary and security scanning with Snyk",
     ],
     stack: ["Node.js", "Express", "Next.js", "Microsoft Azure", "Docker", "GitHub", "JWT", "Cloudinary", "Snyk"],
-    github: "https://github.com/OshadiJayananda/",
+    githubLinks: [
+      {
+        label: "Event Service",
+        url: "https://github.com/OshadiJayananda/event-ticket-event-service",
+      },
+    ],
     demo: "https://lumaevents.vercel.app/",
     accent: "from-[oklch(0.65_0.22_250)] to-[oklch(0.7_0.26_295)]",
     banner: bannerEvent,
@@ -75,7 +84,10 @@ export const projects: Project[] = [
       "Email notifications using Laravel queue system",
     ],
     stack: ["Laravel", "React", "Tailwind CSS", "Stripe API", "MySQL"],
-    github: "https://github.com/OshadiJayananda/",
+    githubLinks: [
+      { label: "Frontend", url: "https://github.com/OshadiJayananda/lms-frontend" },
+      { label: "Backend", url: "https://github.com/OshadiJayananda/lms-backend" },
+    ],
     accent: "from-[oklch(0.78_0.15_200)] to-[oklch(0.65_0.22_250)]",
     banner: bannerLibrary,
   },
@@ -93,7 +105,7 @@ export const projects: Project[] = [
       "Cross-platform: web (React) and Android (Java)",
     ],
     stack: ["React", "ASP.NET", "Java (Android)", "MongoDB", "SQLite", "JWT", "IIS"],
-    github: "https://github.com/OshadiJayananda/",
+    github: "https://github.com/OshadiJayananda/EV-Charging-System",
     accent: "from-[oklch(0.7_0.18_180)] to-[oklch(0.6_0.2_270)]",
     banner: bannerEv,
   },
@@ -111,7 +123,10 @@ export const projects: Project[] = [
       "Security testing with Postman and specialized tools",
     ],
     stack: ["Node.js", "Express.js", "MongoDB", "JWT", "Postman", "Security Testing Tools"],
-    github: "https://github.com/OshadiJayananda/",
+    githubLinks: [
+      { label: "Repo 1", url: "https://github.com/hasindu-k/Garbage_App" },
+      { label: "Repo 2", url: "https://github.com/OshadiJayananda/Garbage_App" },
+    ],
     accent: "from-[oklch(0.7_0.22_30)] to-[oklch(0.65_0.24_295)]",
     banner: bannerGarbage,
   },
@@ -129,7 +144,7 @@ export const projects: Project[] = [
       "Docker-based containerized deployment",
     ],
     stack: ["React", "Node.js", "Docker", "Stripe API", "JWT"],
-    github: "https://github.com/OshadiJayananda/",
+    github: "https://github.com/Miyuri15/FlavorFleet",
     accent: "from-[oklch(0.7_0.18_150)] to-[oklch(0.65_0.22_260)]",
     banner: bannerFlavorfleet,
   },
