@@ -27,7 +27,8 @@ export const projects: Project[] = [
     id: "sinhalalearn",
     title: "AI Sinhala Assistant — SinhalaLearn",
     category: "AI / EdTech",
-    short: "AI-powered Sinhala learning assistant delivering automated feedback and personalized learning support.",
+    short:
+      "AI-powered Sinhala learning assistant delivering automated feedback and personalized learning support.",
     description:
       "An AI-driven research project focused on improving Sinhala language learning through personalized feedback. Built using Python for the AI engine with a modern web frontend to deliver automated feedback and data-driven learning support.",
     highlights: [
@@ -50,7 +51,8 @@ export const projects: Project[] = [
     id: "event-booking",
     title: "Secure Cloud-Based Event Booking Platform",
     category: "Full Stack / Cloud",
-    short: "Microservice-based event booking platform with event management, payments, and cloud deployment.",
+    short:
+      "Microservice-based event booking platform with event management, payments, and cloud deployment.",
     description:
       "A microservice-based event booking platform featuring event management, seat availability tracking, image uploading, booking workflows, secure payments, and notifications. Deployed on Microsoft Azure with Docker containerization and CI/CD via GitHub.",
     highlights: [
@@ -59,7 +61,17 @@ export const projects: Project[] = [
       "Azure cloud deployment with Docker containerization",
       "Image uploading via Cloudinary and security scanning with Snyk",
     ],
-    stack: ["Node.js", "Express", "Next.js", "Microsoft Azure", "Docker", "GitHub", "JWT", "Cloudinary", "Snyk"],
+    stack: [
+      "Node.js",
+      "Express",
+      "Next.js",
+      "Microsoft Azure",
+      "Docker",
+      "GitHub",
+      "JWT",
+      "Cloudinary",
+      "Snyk",
+    ],
     githubLinks: [
       {
         label: "Event Service",
@@ -74,7 +86,8 @@ export const projects: Project[] = [
     id: "library-management",
     title: "Library Management System",
     category: "Full Stack",
-    short: "Full-stack library system with user authentication, book management, fine payments, and email notifications.",
+    short:
+      "Full-stack library system with user authentication, book management, fine payments, and email notifications.",
     description:
       "Developed during my internship at ZinCat Technology, this full-stack library management system handles user login, book catalog management, fine payment processing via Stripe, and automated email notifications using Laravel queues.",
     highlights: [
@@ -95,7 +108,8 @@ export const projects: Project[] = [
     id: "ev-charging",
     title: "EV Charging Station Management System",
     category: "IoT / Full Stack",
-    short: "Web and mobile application for managing EV charging stations with slot booking and QR-based access.",
+    short:
+      "Web and mobile application for managing EV charging stations with slot booking and QR-based access.",
     description:
       "A comprehensive web and mobile application for managing EV charging stations. Features include slot booking, real-time tracking, QR-based access control, secure login, and role-based user management across web and Android platforms.",
     highlights: [
@@ -113,7 +127,8 @@ export const projects: Project[] = [
     id: "garbage",
     title: "Smart Garbage Management System (SGMS)",
     category: "IoT / Security",
-    short: "Secure backend system for waste collection management built on OWASP security practices.",
+    short:
+      "Secure backend system for waste collection management built on OWASP security practices.",
     description:
       "A secure backend system for waste collection management. Implements authentication, role-based access control, secure APIs, input validation, and comprehensive security testing based on OWASP security practices.",
     highlights: [
@@ -134,7 +149,8 @@ export const projects: Project[] = [
     id: "flavorfleet",
     title: "FlavorFleet — Online Food Delivery Platform",
     category: "Full Stack / Microservices",
-    short: "Full-stack food delivery system using microservices with order management and secure payments.",
+    short:
+      "Full-stack food delivery system using microservices with order management and secure payments.",
     description:
       "A full-stack food delivery platform built on a microservices architecture. Features order management, delivery tracking, secure payments with Stripe, API Gateway support, and Docker-based deployment for scalability.",
     highlights: [
@@ -165,18 +181,53 @@ export const experience = [
 ];
 
 export const skills = [
-  { name: "Languages", items: ["Python", "R", "C", "C++", "JavaScript", "PHP", "Java", "C#", "TypeScript", "Kotlin"] },
-  { name: "Web Technologies", items: ["React", "Laravel", "Next.js", ".NET", "Spring Boot", "FastAPI", "Postman", "Swagger", "Tailwind CSS", "ASP.NET"] },
+  {
+    name: "Languages",
+    items: ["Python", "R", "C", "C++", "JavaScript", "PHP", "Java", "C#", "TypeScript", "Kotlin"],
+  },
+  {
+    name: "Web Technologies",
+    items: [
+      "React",
+      "Laravel",
+      "Next.js",
+      ".NET",
+      "Spring Boot",
+      "FastAPI",
+      "Postman",
+      "Swagger",
+      "Tailwind CSS",
+      "ASP.NET",
+    ],
+  },
   { name: "Mobile & Cross-Platform", items: ["Flutter", "Kotlin", "Firebase", "Java (Android)"] },
   { name: "Databases", items: ["MySQL", "PostgreSQL", "MongoDB", "Firebase Firestore", "SQLite"] },
   { name: "Cloud & DevOps", items: ["Microsoft Azure", "Docker", "Git", "GitHub", "IIS", "CI/CD"] },
-  { name: "Tools & Security", items: ["JWT", "Stripe API", "Cloudinary", "Snyk", "OWASP", "Security Testing"] },
+  {
+    name: "Tools & Security",
+    items: ["JWT", "Stripe API", "Cloudinary", "Snyk", "OWASP", "Security Testing"],
+  },
 ];
 
 export const techBadges = [
-  "React", "Next.js", "TypeScript", "Node.js", "Express.js", "Laravel",
-  "Spring Boot", "FastAPI", "Python", "Azure", "Docker", "PostgreSQL",
-  "MongoDB", "Firebase", "Stripe", "Tailwind CSS", "Git", "JWT",
+  "React",
+  "Next.js",
+  "TypeScript",
+  "Node.js",
+  "Express.js",
+  "Laravel",
+  "Spring Boot",
+  "FastAPI",
+  "Python",
+  "Azure",
+  "Docker",
+  "PostgreSQL",
+  "MongoDB",
+  "Firebase",
+  "Stripe",
+  "Tailwind CSS",
+  "Git",
+  "JWT",
 ];
 
 export const certifications: { name: string; issuer: string; year: string }[] = [];
@@ -186,13 +237,15 @@ export const education = [
     school: "Sri Lanka Institute of Information Technology (SLIIT)",
     degree: "BSc (Hons) in Information Technology — Software Engineering",
     period: "Sep 2022 — Sep 2026",
-    detail: "Developed skills in web, mobile, and enterprise application development using HTML, CSS, PHP, Java, ASP.NET, and Vue.js. Conducted AI-driven research project, sinhalalearn.online.",
+    detail:
+      "Developed skills in web, mobile, and enterprise application development using HTML, CSS, PHP, Java, ASP.NET, and Vue.js. Conducted AI-driven research project, sinhalalearn.online.",
   },
   {
     school: "Dharmapala Vidyalaya Pannipitiya",
     degree: "Secondary Education — Physical Science Stream",
     period: "Jan 2008 — Feb 2022",
-    detail: "GCE O/L: 7A's, 2B's (Dec 2018) • GCE A/L: 3C's in Maths Stream — Combined Mathematics, Chemistry, Physics (Feb 2022)",
+    detail:
+      "GCE O/L: 7A's, 2B's (Dec 2018) • GCE A/L: 3C's in Maths Stream — Combined Mathematics, Chemistry, Physics (Feb 2022)",
   },
 ];
 
@@ -210,5 +263,5 @@ export const personal = {
   location: "Pannipitiya, Sri Lanka",
   address: "100/9C, Dharmapala Mawatha, Pannipitiya",
   summary:
-    "I am a fourth-year undergraduate in Software Engineering at the Sri Lanka Institute of Information Technology (SLIIT), specializing as a full-stack developer. With a passion for technology and continuous learning, I am committed to staying at the forefront of cutting-edge technologies. My skills include working with various programming languages, web development frameworks, and database management systems. I aim to contribute to a forward-thinking organization that challenges my abilities and supports my professional growth in a competitive environment.",
+    "Graduate Software Engineering at the Sri Lanka Institute of Information Technology (SLIIT), specializing as a full-stack developer. With a passion for technology and continuous learning, I am committed to staying at the forefront of cutting-edge technologies. My skills include working with various programming languages, web development frameworks, and database management systems. I aim to contribute to a forward-thinking organization that challenges my abilities and supports my professional growth in a competitive environment.",
 };
