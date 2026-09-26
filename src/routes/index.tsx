@@ -263,10 +263,8 @@ function About() {
         className="glass mx-auto max-w-3xl rounded-2xl p-8 sm:p-10"
       >
         <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
-          Graduated Software Engineer at SLIIT, specializing as a
-          <span className="text-foreground"> full-stack developer</span>. With a passion for
-          technology and continuous learning, I am committed to staying at the forefront of
-          cutting-edge technologies.
+          Graduated Software Engineer at SLIIT, With a passion for technology and continuous
+          learning, I am committed to staying at the forefront of cutting-edge technologies.
         </p>
         <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
           My skills span various programming languages, web development frameworks, and database

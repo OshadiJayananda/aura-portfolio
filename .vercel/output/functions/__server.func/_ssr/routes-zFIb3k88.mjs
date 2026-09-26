@@ -1,9 +1,9 @@
 import { o as __toESM } from "../_runtime.mjs";
-import { a as projects, c as techBadges, i as personal, n as education, o as skills, r as experience, s as social, t as certifications } from "./portfolio-data-DHU5Xn47.mjs";
+import { a as projects, c as techBadges, i as personal, n as education, o as skills, r as experience, s as social, t as certifications } from "./portfolio-data-Bj9-KBbT.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { i as AnimatePresence, n as useScroll, r as motion, t as useTransform } from "../_libs/framer-motion.mjs";
 import { _ as Briefcase, a as Phone, b as ArrowRight, c as Linkedin, d as ExternalLink, f as Download, g as Cloud, h as CodeXml, i as Send, l as GraduationCap, m as Cpu, n as Wrench, o as MapPin, p as Database, r as Sparkles, s as Mail, t as X, u as Github, v as Brain, y as Award } from "../_libs/lucide-react.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-BZ8smviM.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-zFIb3k88.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function ParticlesBg() {
@@ -323,165 +323,132 @@ function Hero() {
 	const y = useTransform(scrollYProgress, [0, 1], [0, 120]);
 	const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
-    id: "top",
-    ref,
-    className: "flex min-h-[92vh] flex-col items-center justify-center pt-12 text-center",
-    children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.div, {
-      style: {
-        y,
-        opacity,
-      },
-      className: "w-full",
-      children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.div, {
-          initial: {
-            opacity: 0,
-            y: 20,
-          },
-          animate: {
-            opacity: 1,
-            y: 0,
-          },
-          transition: { delay: 0.1 },
-          className:
-            "glass mx-auto inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs text-muted-foreground",
-          children: [
-            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-              className: "relative flex h-2 w-2",
-              children: [
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-                  className:
-                    "absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75",
-                }),
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-                  className: "relative inline-flex h-2 w-2 rounded-full bg-emerald-500",
-                }),
-              ],
-            }),
-            "Available for Internships & Associate Software Engineer Opportunities",
-          ],
-        }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.h1, {
-          initial: {
-            opacity: 0,
-            y: 30,
-          },
-          animate: {
-            opacity: 1,
-            y: 0,
-          },
-          transition: {
-            delay: 0.2,
-            duration: 0.8,
-          },
-          className:
-            "mt-8 font-display text-5xl font-bold leading-[1.05] tracking-tight sm:text-7xl md:text-8xl",
-          children: [
-            "Oshadi Jayananda",
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-              className: "gradient-text",
-              children: "Full Stack Developer.",
-            }),
-          ],
-        }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.p, {
-          initial: {
-            opacity: 0,
-            y: 20,
-          },
-          animate: {
-            opacity: 1,
-            y: 0,
-          },
-          transition: { delay: 0.35 },
-          className: "mx-auto mt-6 max-w-2xl text-base text-muted-foreground sm:text-lg",
-          children: [
-            "Graduated Software Engineer at SLIIT crafting performant, accessible products across ",
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-              className: "text-foreground",
-              children: "React, Node.js, Laravel, Python",
-            }),
-            " ",
-            "and beyond.",
-          ],
-        }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.div, {
-          initial: {
-            opacity: 0,
-            y: 20,
-          },
-          animate: {
-            opacity: 1,
-            y: 0,
-          },
-          transition: { delay: 0.5 },
-          className: "mt-10 flex flex-wrap items-center justify-center gap-3",
-          children: [
-            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-              href: "#projects",
-              className:
-                "group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[oklch(0.7_0.26_295)] to-[oklch(0.65_0.22_250)] px-6 py-3 text-sm font-medium text-white shadow-lg shadow-[oklch(0.7_0.26_295/0.3)] transition hover:shadow-[oklch(0.7_0.26_295/0.5)]",
-              children: [
-                "View Projects",
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowRight, {
-                  className: "h-4 w-4 transition group-hover:translate-x-1",
-                }),
-              ],
-            }),
-            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-              href: "#contact",
-              className:
-                "glass inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition hover:bg-white/10",
-              children: [
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Mail, { className: "h-4 w-4" }),
-                " Get in touch",
-              ],
-            }),
-            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-              className: "flex items-center gap-1",
-              children: [
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SocialIcon, {
-                  href: social.github,
-                  icon: Github,
-                }),
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SocialIcon, {
-                  href: social.linkedin,
-                  icon: Linkedin,
-                }),
-              ],
-            }),
-          ],
-        }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
-          initial: { opacity: 0 },
-          animate: { opacity: 1 },
-          transition: { delay: 0.8 },
-          className: "mt-16 flex flex-wrap justify-center gap-2",
-          children: techBadges.map((t, i) =>
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
-              motion.span,
-              {
-                initial: {
-                  opacity: 0,
-                  scale: 0.8,
-                },
-                animate: {
-                  opacity: 1,
-                  scale: 1,
-                },
-                transition: { delay: 0.8 + i * 0.04 },
-                className:
-                  "rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-muted-foreground backdrop-blur-sm",
-                children: t,
-              },
-              t,
-            ),
-          ),
-        }),
-      ],
-    }),
-  });
+		id: "top",
+		ref,
+		className: "flex min-h-[92vh] flex-col items-center justify-center pt-12 text-center",
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.div, {
+			style: {
+				y,
+				opacity
+			},
+			className: "w-full",
+			children: [
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.div, {
+					initial: {
+						opacity: 0,
+						y: 20
+					},
+					animate: {
+						opacity: 1,
+						y: 0
+					},
+					transition: { delay: .1 },
+					className: "glass mx-auto inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs text-muted-foreground",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+						className: "relative flex h-2 w-2",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "relative inline-flex h-2 w-2 rounded-full bg-emerald-500" })]
+					}), "Available for Internships & Associate Software Engineer Opportunities"]
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.h1, {
+					initial: {
+						opacity: 0,
+						y: 30
+					},
+					animate: {
+						opacity: 1,
+						y: 0
+					},
+					transition: {
+						delay: .2,
+						duration: .8
+					},
+					className: "mt-8 font-display text-5xl font-bold leading-[1.05] tracking-tight sm:text-7xl md:text-8xl",
+					children: [
+						"Oshadi Jayananda",
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+							className: "gradient-text",
+							children: "Full Stack Developer."
+						})
+					]
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.p, {
+					initial: {
+						opacity: 0,
+						y: 20
+					},
+					animate: {
+						opacity: 1,
+						y: 0
+					},
+					transition: { delay: .35 },
+					className: "mx-auto mt-6 max-w-2xl text-base text-muted-foreground sm:text-lg",
+					children: [
+						"Graduated Software Engineer at SLIIT crafting performant, accessible products across",
+						" ",
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+							className: "text-foreground",
+							children: "React, Node.js, Laravel, Python"
+						}),
+						" and beyond."
+					]
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.div, {
+					initial: {
+						opacity: 0,
+						y: 20
+					},
+					animate: {
+						opacity: 1,
+						y: 0
+					},
+					transition: { delay: .5 },
+					className: "mt-10 flex flex-wrap items-center justify-center gap-3",
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+							href: "#projects",
+							className: "group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[oklch(0.7_0.26_295)] to-[oklch(0.65_0.22_250)] px-6 py-3 text-sm font-medium text-white shadow-lg shadow-[oklch(0.7_0.26_295/0.3)] transition hover:shadow-[oklch(0.7_0.26_295/0.5)]",
+							children: ["View Projects", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowRight, { className: "h-4 w-4 transition group-hover:translate-x-1" })]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+							href: "#contact",
+							className: "glass inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition hover:bg-white/10",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Mail, { className: "h-4 w-4" }), " Get in touch"]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "flex items-center gap-1",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SocialIcon, {
+								href: social.github,
+								icon: Github
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SocialIcon, {
+								href: social.linkedin,
+								icon: Linkedin
+							})]
+						})
+					]
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
+					initial: { opacity: 0 },
+					animate: { opacity: 1 },
+					transition: { delay: .8 },
+					className: "mt-16 flex flex-wrap justify-center gap-2",
+					children: techBadges.map((t, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.span, {
+						initial: {
+							opacity: 0,
+							scale: .8
+						},
+						animate: {
+							opacity: 1,
+							scale: 1
+						},
+						transition: { delay: .8 + i * .04 },
+						className: "rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-muted-foreground backdrop-blur-sm",
+						children: t
+					}, t))
+				})
+			]
+		})
+	});
 }
 function SocialIcon({ href, icon: Icon }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
@@ -520,69 +487,49 @@ function SectionHeader({ eyebrow, title, sub }) {
 }
 function About() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
-    id: "about",
-    className: "py-24 sm:py-32",
-    children: [
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SectionHeader, {
-        eyebrow: "About",
-        title: "Passionate engineer, continuous learner.",
-      }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.div, {
-        variants: fadeUp,
-        initial: "hidden",
-        whileInView: "show",
-        viewport: {
-          once: true,
-          margin: "-100px",
-        },
-        className: "glass mx-auto max-w-3xl rounded-2xl p-8 sm:p-10",
-        children: [
-          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-            className: "text-base leading-relaxed text-muted-foreground sm:text-lg",
-            children: [
-              "Graduated Software Engineer at SLIIT, specializing as a",
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-                className: "text-foreground",
-                children: " full-stack developer",
-              }),
-              ". With a passion for technology and continuous learning, I am committed to staying at the forefront of cutting-edge technologies.",
-            ],
-          }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-            className: "mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg",
-            children:
-              "My skills span various programming languages, web development frameworks, and database management systems. I aim to contribute to a forward-thinking organization that challenges my abilities and supports my professional growth.",
-          }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-            className: "mt-8 grid grid-cols-3 gap-4 text-center",
-            children: [
-              ["3+", "Years coding"],
-              ["6+", "Projects built"],
-              ["10+", "Technologies"],
-            ].map(([n, l]) =>
-              /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
-                "div",
-                {
-                  className: "rounded-xl border border-white/5 bg-white/[0.02] p-4",
-                  children: [
-                    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-                      className: "font-display text-2xl font-bold gradient-text sm:text-3xl",
-                      children: n,
-                    }),
-                    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-                      className: "mt-1 text-xs text-muted-foreground",
-                      children: l,
-                    }),
-                  ],
-                },
-                l,
-              ),
-            ),
-          }),
-        ],
-      }),
-    ],
-  });
+		id: "about",
+		className: "py-24 sm:py-32",
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SectionHeader, {
+			eyebrow: "About",
+			title: "Passionate engineer, continuous learner."
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.div, {
+			variants: fadeUp,
+			initial: "hidden",
+			whileInView: "show",
+			viewport: {
+				once: true,
+				margin: "-100px"
+			},
+			className: "glass mx-auto max-w-3xl rounded-2xl p-8 sm:p-10",
+			children: [
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					className: "text-base leading-relaxed text-muted-foreground sm:text-lg",
+					children: "Graduated Software Engineer at SLIIT, With a passion for technology and continuous learning, I am committed to staying at the forefront of cutting-edge technologies."
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					className: "mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg",
+					children: "My skills span various programming languages, web development frameworks, and database management systems. I aim to contribute to a forward-thinking organization that challenges my abilities and supports my professional growth."
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					className: "mt-8 grid grid-cols-3 gap-4 text-center",
+					children: [
+						["3+", "Years coding"],
+						["6+", "Projects built"],
+						["10+", "Technologies"]
+					].map(([n, l]) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "rounded-xl border border-white/5 bg-white/[0.02] p-4",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: "font-display text-2xl font-bold gradient-text sm:text-3xl",
+							children: n
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: "mt-1 text-xs text-muted-foreground",
+							children: l
+						})]
+					}, l))
+				})
+			]
+		})]
+	});
 }
 function Experience() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {

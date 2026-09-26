@@ -235,7 +235,7 @@ export const certifications: { name: string; issuer: string; year: string }[] = 
 export const education = [
   {
     school: "Sri Lanka Institute of Information Technology (SLIIT)",
-    degree: "BSc (Hons) in Information Technology — Software Engineering",
+    degree: "BSc (Hons) in Information Technology — Software Engineering (Second Class Lower Division)",
     period: "Sep 2022 — Sep 2026",
     detail:
       "Developed skills in web, mobile, and enterprise application development using HTML, CSS, PHP, Java, ASP.NET, and Vue.js. Conducted AI-driven research project, sinhalalearn.online.",
@@ -263,5 +263,5 @@ export const personal = {
   location: "Pannipitiya, Sri Lanka",
   address: "100/9C, Dharmapala Mawatha, Pannipitiya",
   summary:
-    "Graduate Software Engineering at the Sri Lanka Institute of Information Technology (SLIIT), specializing as a full-stack developer. With a passion for technology and continuous learning, I am committed to staying at the forefront of cutting-edge technologies. My skills include working with various programming languages, web development frameworks, and database management systems. I aim to contribute to a forward-thinking organization that challenges my abilities and supports my professional growth in a competitive environment.",
+    "Graduate Software Engineering at the Sri Lanka Institute of Information Technology (SLIIT), With a passion for technology and continuous learning, I am committed to staying at the forefront of cutting-edge technologies. My skills include working with various programming languages, web development frameworks, and database management systems. I aim to contribute to a forward-thinking organization that challenges my abilities and supports my professional growth in a competitive environment.",
 };
