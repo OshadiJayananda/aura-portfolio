@@ -1,11 +1,11 @@
-//#region node_modules/.nitro/vite/services/ssr/assets/portfolio-data-Bj9-KBbT.js
+//#region node_modules/.nitro/vite/services/ssr/assets/portfolio-data-CSsu2IkJ.js
 var banner_sinhalalearn_default = "/assets/banner-sinhalalearn-DHutLRm4.jpg";
 var banner_event_default = "/assets/banner-event-Bs9LUQJg.jpg";
 var banner_library_default = "/assets/banner-library-DyhtT9fj.jpg";
 var banner_ev_default = "/assets/banner-ev-Da_ox89p.jpg";
 var banner_garbage_default = "/assets/banner-garbage-H_c5HCRB.jpg";
 var banner_flavorfleet_default = "/assets/banner-flavorfleet-B17JINxX.jpg";
-var Oshadi_Jayananda_default = "/assets/Oshadi_Jayananda-B7SEeDCo.pdf";
+var Oshadi_Jayananda_default = "/assets/Oshadi_Jayananda-BlP1uO9Y.pdf";
 var projects = [
 	{
 		id: "sinhalalearn",
@@ -283,7 +283,7 @@ var techBadges = [
 var certifications = [];
 var education = [{
 	school: "Sri Lanka Institute of Information Technology (SLIIT)",
-	degree: "BSc (Hons) in Information Technology — Software Engineering",
+	degree: "BSc (Hons) in Information Technology — Software Engineering (Second Class Lower Division)",
 	period: "Sep 2022 — Sep 2026",
 	detail: "Developed skills in web, mobile, and enterprise application development using HTML, CSS, PHP, Java, ASP.NET, and Vue.js. Conducted AI-driven research project, sinhalalearn.online."
 }, {

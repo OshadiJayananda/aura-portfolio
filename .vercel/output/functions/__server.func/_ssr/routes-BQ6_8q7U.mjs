@@ -1,9 +1,9 @@
 import { o as __toESM } from "../_runtime.mjs";
-import { a as projects, c as techBadges, i as personal, n as education, o as skills, r as experience, s as social, t as certifications } from "./portfolio-data-Bj9-KBbT.mjs";
+import { a as projects, c as techBadges, i as personal, n as education, o as skills, r as experience, s as social, t as certifications } from "./portfolio-data-CSsu2IkJ.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { i as AnimatePresence, n as useScroll, r as motion, t as useTransform } from "../_libs/framer-motion.mjs";
 import { _ as Briefcase, a as Phone, b as ArrowRight, c as Linkedin, d as ExternalLink, f as Download, g as Cloud, h as CodeXml, i as Send, l as GraduationCap, m as Cpu, n as Wrench, o as MapPin, p as Database, r as Sparkles, s as Mail, t as X, u as Github, v as Brain, y as Award } from "../_libs/lucide-react.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-zFIb3k88.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-BQ6_8q7U.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function ParticlesBg() {

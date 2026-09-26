@@ -1,19 +1,19 @@
-//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-B7Xm3dKH.js
+//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-B1qlUbY-.js
 var tsrStartManifest = () => ({ routes: {
 	__root__: {
 		filePath: "E:/Oshadi Jayananda/aura-portfolio/src/routes/__root.tsx",
 		children: ["/"],
-		preloads: ["/assets/index-dZBA3t3_.js"],
+		preloads: ["/assets/index-DjKQYYab.js"],
 		scripts: [{ attrs: {
 			type: "module",
 			async: !0,
-			src: "/assets/index-dZBA3t3_.js"
+			src: "/assets/index-DjKQYYab.js"
 		} }]
 	},
 	"/": {
 		filePath: "E:/Oshadi Jayananda/aura-portfolio/src/routes/index.tsx",
 		children: void 0,
-		preloads: ["/assets/routes-9m5ozhqj.js"]
+		preloads: ["/assets/routes-Dmp7G3gL.js"]
 	}
 } });
 //#endregion
