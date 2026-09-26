@@ -168,9 +168,8 @@ function Hero() {
           transition={{ delay: 0.35 }}
           className="mx-auto mt-6 max-w-2xl text-base text-muted-foreground sm:text-lg"
         >
-          Final-year Software Engineering undergraduate at SLIIT crafting performant, accessible
-          products across <span className="text-foreground">React, Node.js, Laravel, Python</span>{" "}
-          and beyond.
+          Graduated Software Engineer at SLIIT crafting performant, accessible products across{" "}
+          <span className="text-foreground">React, Node.js, Laravel, Python</span> and beyond.
         </motion.p>
 
         <motion.div
@@ -264,7 +263,7 @@ function About() {
         className="glass mx-auto max-w-3xl rounded-2xl p-8 sm:p-10"
       >
         <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
-          I am a fourth-year undergraduate in Software Engineering at SLIIT, specializing as a
+          Graduated Software Engineer at SLIIT, specializing as a
           <span className="text-foreground"> full-stack developer</span>. With a passion for
           technology and continuous learning, I am committed to staying at the forefront of
           cutting-edge technologies.

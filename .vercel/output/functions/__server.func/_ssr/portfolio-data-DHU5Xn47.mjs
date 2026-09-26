@@ -300,11 +300,11 @@ var social = {
 };
 var personal = {
 	name: "Oshadi Jayananda",
-	title: "Software Engineering Undergraduate & Full Stack Developer",
+	title: "Graduated Software Engineer & Full Stack Developer",
 	phone: "+94 76 203 2676",
 	location: "Pannipitiya, Sri Lanka",
 	address: "100/9C, Dharmapala Mawatha, Pannipitiya",
-	summary: "I am a fourth-year undergraduate in Software Engineering at the Sri Lanka Institute of Information Technology (SLIIT), specializing as a full-stack developer. With a passion for technology and continuous learning, I am committed to staying at the forefront of cutting-edge technologies. My skills include working with various programming languages, web development frameworks, and database management systems. I aim to contribute to a forward-thinking organization that challenges my abilities and supports my professional growth in a competitive environment."
+	summary: "Graduated Software Engineer at the Sri Lanka Institute of Information Technology (SLIIT), specializing as a full-stack developer. With a passion for technology and continuous learning, I am committed to staying at the forefront of cutting-edge technologies. My skills include working with various programming languages, web development frameworks, and database management systems. I aim to contribute to a forward-thinking organization that challenges my abilities and supports my professional growth in a competitive environment."
 };
 //#endregion
 export { projects as a, techBadges as c, personal as i, education as n, skills as o, experience as r, social as s, certifications as t };
