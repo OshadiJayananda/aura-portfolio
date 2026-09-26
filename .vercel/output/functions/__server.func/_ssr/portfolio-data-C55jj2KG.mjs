@@ -1,11 +1,11 @@
-//#region node_modules/.nitro/vite/services/ssr/assets/portfolio-data-CSsu2IkJ.js
+//#region node_modules/.nitro/vite/services/ssr/assets/portfolio-data-C55jj2KG.js
 var banner_sinhalalearn_default = "/assets/banner-sinhalalearn-DHutLRm4.jpg";
 var banner_event_default = "/assets/banner-event-Bs9LUQJg.jpg";
 var banner_library_default = "/assets/banner-library-DyhtT9fj.jpg";
 var banner_ev_default = "/assets/banner-ev-Da_ox89p.jpg";
 var banner_garbage_default = "/assets/banner-garbage-H_c5HCRB.jpg";
 var banner_flavorfleet_default = "/assets/banner-flavorfleet-B17JINxX.jpg";
-var Oshadi_Jayananda_default = "/assets/Oshadi_Jayananda-BlP1uO9Y.pdf";
+var Oshadi_Jayananda_default = "/assets/Oshadi_Jayananda-D0sgj6jw.pdf";
 var projects = [
 	{
 		id: "sinhalalearn",
